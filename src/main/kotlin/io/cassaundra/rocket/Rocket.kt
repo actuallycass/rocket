@@ -89,6 +89,8 @@ object Rocket : LaunchpadListener {
 	@JvmStatic fun midiClientIsAvailable(): Boolean {
 		if(isClosed) return false
 
+		scanner?.quickScan(Runnable {})
+
 		return client != null
 	}
 

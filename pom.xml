@@ -5,7 +5,7 @@
 
     <groupId>io.cassaundra</groupId>
     <artifactId>rocket</artifactId>
-    <version>1.2.1</version>
+    <version>1.2.2</version>
 	<description>Novation Launchpad MK2 client</description>
 
 	<url>https://github.com/cassaundra/rocket</url>

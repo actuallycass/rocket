@@ -28,6 +28,10 @@ class MidiLaunchpadScanner(val scanRateMillis: Long) : LaunchpadScanner {
 		}
 	}
 
+	override fun quickScan(onSuccess: java.lang.Runnable) = runBlocking {
+		scan(onSuccess)
+	}
+
 	private suspend fun scan(onSuccess: Runnable) = coroutineScope {
 		val config = MidiDeviceConfiguration.autodetect()
 

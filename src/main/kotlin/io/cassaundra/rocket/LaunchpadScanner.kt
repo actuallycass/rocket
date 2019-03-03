@@ -7,6 +7,11 @@ interface LaunchpadScanner {
 	fun beginScan(onSuccess: Runnable)
 
 	/**
+	 * Do a single scan synchronously.
+	 */
+	fun quickScan(onSuccess: Runnable)
+
+	/**
 	 * Stop scanning. Should block until stopped.
 	 */
 	fun stopScan()
